@@ -5,11 +5,13 @@
 This script shutdown EC2 VM the night and the weekend for DEV env for save money
 
 ################################## prerequisite ##############################
+
 This Powershell script need aws cli install on your system.
 And configure with aws configure commande
 give the name of your AWS profile in the script in the var $AWS_PROFILE
 
 ################################## Context ##############################
+
 On my aws network i use TAG for EC2 : ( ENV=PROD or ENV=DEV pr ENV=POC ) 
 I use this script for save money. So i stop the VMs the night and weekend.
 I use this in a cron and i start this script every hour.
